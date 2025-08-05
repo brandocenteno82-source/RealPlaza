@@ -1,0 +1,2 @@
+# RealPlaza
+Hostal Real Plaza
