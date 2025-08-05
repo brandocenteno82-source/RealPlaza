@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Plaza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Plaza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logotipo.jpg" alt="Logo Real Plaza" class="logo">
+                <span>Real Plaza</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tarifas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Atractivos Turísticos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Iglesia San Benedicto de Abad</a></li>
+                            <li><a class="dropdown-item" href="#">Aguas Termales de Ticaco – Putina</a></li>
+                            <li><a class="dropdown-item" href="#">Camino Inca Qhapaq Ñan</a></li>
+                            <li><a class="dropdown-item" href="#">Juegos Extremos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comentarios</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary ms-3">Reservar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Bienvenido a Real Plaza</h1>
+            <p>Tu hogar lejos de casa en el corazón de Tarata. Habitaciones cómodas, precios accesibles y la mejor ubicación para explorar todo lo que tenemos para ofrecerte.</p>
+            <div class="booking-form">
+                <h3>Reserva tu habitación</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="check-in">Check-in</label>
+                            <input type="date" id="check-in" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="check-out">Check-out</label>
+                            <input type="date" id="check-out" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="guests">Huéspedes</label>
+                            <select id="guests" class="form-control">
+                                <option value="1">1 Huésped</option>
+                                <option value="2">2 Huéspedes</option>
+                                <option value="3">3 Huéspedes</option>
+                                <option value="4">4 Huéspedes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Buscar Habitaciones</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section">
+        <div class="container">
+            <h2>Nuestras Habitaciones</h2>
+            <p>Descubre nuestras cómodas habitaciones diseñadas para tu máximo confort</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-warning w-100 mb-3">Todas las habitaciones</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-outline-warning w-100 mb-3">Individual</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-outline-warning w-100 mb-3">Doble</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-outline-warning w-100 mb-3">Familiar</button>
+                </div>
+                <div class="col-md-3">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="img/habitacion 1.webp" alt="Habitación Individual">
+                        <div class="price">S/.45/noche</div>
+                        <h3>Habitación Individual</h3>
+                        <p>Perfecta para viajeros solos que buscan comodidad y privacidad.</p>
+                        <ul>
+                            <li><i class="fas fa-user"></i> 1 persona</li>
+                            <li><i class="fas fa-square"></i> 18 m²</li>
+                        </ul>
+                        <div class="actions">
+                            <button class="btn btn-warning">Ver Detalles</button>
+                            <button class="btn btn-warning">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="img/habitacion 2.webp" alt="Habitación Doble">
+                        <div class="price">S/.75/noche</div>
+                        <h3>Habitación Doble</h3>
+                        <p>Ideal para parejas o amigos que viajan juntos.</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 2 personas</li>
+                            <li><i class="fas fa-square"></i> 18 m²</li>
+                        </ul>
+                        <div class="actions">
+                            <button class="btn btn-warning">Ver Detalles</button>
+                            <button class="btn btn-warning">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="img/habitacion 3.webp" alt="Habitación Familiar">
+                        <div class="price">S/.120/noche</div>
+                        <h3>Habitación Familiar</h3>
+                        <p>Espaciosa habitación para familias con niños.</p>
+                        <ul>
+                            <li><i class="fas fa-users"></i> 4 personas</li>
+                            <li><i class="fas fa-square"></i> 25 m²</li>
+                        </ul>
+                        <div class="actions">
+                            <button class="btn btn-warning">Ver Detalles</button>
+                            <button class="btn btn-warning">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More rooms... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section">
+        <div class="container">
+            <h2>Tarifas y Paquetes</h2>
+            <p>Encuentra el paquete perfecto para tu estancia con nuestras tarifas competitivas</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <h3>Estancia Básica</h3>
+                        <p>S/.35 <del>S/.45</del></p>
+                        <p>por noche</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Habitación individual</li>
+                            <li><i class="fas fa-check"></i> WiFi gratuito</li>
+                            <li><i class="fas fa-check"></i> Baño Compartido</li>
+                            <li><i class="fas fa-check"></i> Acceso 24/7</li>
+                            <li><i class="fas fa-check"></i> Check-in flexible</li>
+                        </ul>
+                        <button class="btn btn-warning w-100">Seleccionar Paquete</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="package-card active">
+                        <h3>Estancia Confort</h3>
+                        <p>S/.65 <del>S/.75</del></p>
+                        <p>por noche</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Habitación doble</li>
+                            <li><i class="fas fa-check"></i> WiFi gratuito</li>
+                            <li><i class="fas fa-check"></i> Armario</li>
+                            <li><i class="fas fa-check"></i> Acceso 24/7</li>
+                            <li><i class="fas fa-check"></i> TV cable</li>
+                            <li><i class="fas fa-check"></i> Baño Privado</li>
+                            <li><i class="fas fa-check"></i> Servicio de limpieza diario</li>
+                        </ul>
+                        <button class="btn btn-primary w-100">Seleccionar Paquete</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <h3>Estancia Premium</h3>
+                        <p>S/.120 <del>$150</del></p>
+                        <p>por noche</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Suite deluxe</li>
+                            <li><i class="fas fa-check"></i> WiFi premium</li>
+                            <li><i class="fas fa-check"></i> Baño Privado</li>
+                            <li><i class="fas fa-check"></i> Mejor Vista</li>
+                            <li><i class="fas fa-check"></i> Servicio de habitaciones</li>
+                            <li><i class="fas fa-check"></i> Acceso a sala VIP</li>
+                            <li><i class="fas fa-check"></i> Acceso 24/7</li>
+                            <li><i class="fas fa-check"></i> Servicio de lavandería</li>
+                        </ul>
+                        <button class="btn btn-warning w-100">Seleccionar Paquete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Rates Section -->
+    <section class="seasonal-rates-section">
+        <div class="container">
+            <h2>Tarifas Estacionales</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="season-card">
+                        <h3>Temporada Alta</h3>
+                        <p>Dic - Feb</p>
+                        <p><strong>1.5x</strong></p>
+                        <p>Navidad y Año Nuevo</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="season-card">
+                        <h3>Temporada Media</h3>
+                        <p>Mar - May, Sep - Nov</p>
+                        <p><strong>1.2x</strong></p>
+                        <p>Clima agradable</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="season-card">
+                        <h3>Temporada Baja</h3>
+                        <p>Jun - Ago</p>
+                        <p><strong>0.8x</strong></p>
+                        <p>Mejores precios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Discounts Section -->
+    <section class="special-discounts-section">
+        <div class="container">
+            <h2>Descuentos Especiales</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="discount-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>Reserva anticipada: 15% descuento (30 días antes)</p>
+                    </div>
+                    <div class="discount-card">
+                        <i class="fas fa-group"></i>
+                        <p>Grupos: 10% descuento (5+ personas)</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="discount-card">
+                        <i class="fas fa-clock"></i>
+                        <p>Estancia larga: 20% descuento (7+ noches)</p>
+                    </div>
+                    <div class="discount-card">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <p>Estudiantes: 10% descuento (con ID)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions-section">
+        <div class="container">
+            <h2>Atractivos Turísticos Cercanos</h2>
+            <p>Descubre los lugares más fascinantes a pocos pasos de nuestro hostal</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tour-card">
+                        <img src="img/iglesia de TARATA.jpg" alt="Iglesia San Benedicto de Abad">
+                        <div class="distance">0.0 km<br>1 min caminando</div>
+                        <h3>Iglesia San Benedicto de Abad</h3>
+                        <p>La iglesia principal de Tarata, que se encuentra en la Plaza de Armas de Tarata.</p>
+                        <p><strong>Destacados:</strong></p>
+                        <div class="tags">
+                            <span class="tag">Arquitectura Colonial</span>
+                            <span class="tag">Plazas Históricas</span>
+                            <span class="tag">Cafeterías</span>
+                        </div>
+                        <button class="btn btn-warning">Más Información</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tour-card">
+                        <img src="img/baños termanles.jpg" alt="Aguas Termales de Ticaco – Putina">
+                        <div class="distance">1.2 km<br>20 min caminando</div>
+                        <h3>Aguas Termales de Ticaco – Putina</h3>
+                        <p>Por último lugar el principal lugar turístico de Tarata es visitar sus Aguas Termales de Ticaco, donde son aguas termo-medicinales del volcán, momento ideal para relajarse.</p>
+                        <p><strong>Destacados:</strong></p>
+                        <div class="tags">
+                            <span class="tag">Aguas Termales</span>
+                            <span class="tag">Paisajes</span>
+                            <span class="tag">Andenes</span>
+                            <span class="tag">Restaurant</span>
+                        </div>
+                        <button class="btn btn-warning">Más Información</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tour-card">
+                        <img src="img/camino inca.jpg" alt="Camino Inca Qhapaq Ñan">
+                        <div class="distance">0.8 km<br>15 min caminando</div>
+                        <h3>Camino Inca Qhapaq Ñan</h3>
+                        <p>Realiza una caminata por parte del Camino Inca Qhapaq Ñan, una caminata que te llevara al pasado donde los incas pasaron por los caminos, una red de caminos que unía todo el imperio incaico.</p>
+                        <p><strong>Destacados:</strong></p>
+                        <div class="tags">
+                            <span class="tag">Caminata Cultural</span>
+                            <span class="tag">Andenes</span>
+                            <span class="tag">Ríos</span>
+                            <span class="tag">Antepasados</span>
+                        </div>
+                        <button class="btn btn-warning">Más Información</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tour-card">
+                        <img src="img/juegos extremos.jpg" alt="Juegos Extremos">
+                        <div class="distance">0.4 km<br>15min caminando</div>
+                        <h3>Juegos Extremos</h3>
+                        <p>Tarata te espera con 4 experiencias extremas: Canopy, Zipline Bike, Columpio Extremo y Puente Tibetano.</p>
+                        <p><strong>Destacados:</strong></p>
+                        <div class="tags">
+                            <span class="tag">Adrenalina</span>
+                            <span class="tag">Gastronomia</span>
+                            <span class="tag">Artesanías</span>
+                            <span class="tag">Cultura Viva</span>
+                        </div>
+                        <button class="btn btn-warning">Más Información</button>
+                    </div>
+                </div>
+                <!-- More attractions... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours-section">
+        <div class="container">
+            <div class="alert alert-warning text-center" role="alert">
+                <h3>¿Necesitas un Tour Guiado?</h3>
+                <p>Nuestro personal puede ayudarte a organizar tours personalizados para que disfrutes al máximo de todos estos increíbles lugares.</p>
+                <button class="btn btn-warning">Solicitar Tour</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <p>Estratégicamente ubicado en el corazón de la ciudad, cerca de todo lo que necesitas</p>
+            <div class="map-container">
+                <div class="info">
+                    <h3>Real Plaza Hostal</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección<br>Calle Francisco Antonio de Zela N°26 (Frente a la Plaza Principal)</p>
+                    <p><i class="fas fa-phone"></i> Teléfono<br>952269343</p>
+                    <p><i class="fas fa-envelope"></i> Email<br>info@realplazahostal.com</p>
+                    <p><i class="fas fa-clock"></i> Horario de Recepción<br>24 horas, 7 días a la semana</p>
+                    <hr>
+                    <h4>Atracciones Cercanas</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Centro Histórico<br>0.5 km • 5 min caminando</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tour Turístico<br>0.3 km • 3 min caminando</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Plaza Principal<br>0.8 km • 8 min caminando</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mercado Local<br>0.4 km • 4 min caminando</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Museo de Arte<br>1.2 km • 12 min caminando</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Parada de Autobús<br>0.2 km • 2 min caminando</li>
+                    </ul>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.567923997889!2d-122.4194155842724!3d37.77492957979138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b7828f2c7%3A0x80e570d5d12821de!2s123+Main+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1ses!2scl!4v1693507200000!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="info">
+                    <h3>Cómo Llegar</h3>
+                    <p><i class="fas fa-plane-departure"></i> Desde el Aeropuerto<br>Aeropuerto Internacional de Tacna<br>Carlos Ciriani Santa Rosa</p>
+                    <p><i class="fas fa-bus"></i> Tour Turístico<br>Camina 10 minutos o toma el autobús 15</p>
+                    <p><i class="fas fa-car"></i> En Auto<br>Estacionamiento disponible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Comentarios de Huéspedes</h2>
+            <p>Descubre qué dicen nuestros huéspedes sobre su experiencia en Real Plaza</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="review-stats">
+                        <h3>4.6</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Basado en 127 comentarios</p>
+                        <div class="chart">
+                            <div class="bar" style="width: 80%;"><span>5</span></div>
+                            <div class="bar" style="width: 60%;"><span>4</span></div>
+                            <div class="bar" style="width: 30%;"><span>3</span></div>
+                            <div class="bar" style="width: 10%;"><span>2</span></div>
+                            <div class="bar" style="width: 5%;"><span>1</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="review-highlights">
+                        <h3>Aspectos Mejor Valorados</h3>
+                        <ul>
+                            <li>Limpieza <span class="progress-bar"><div class="progress" style="width: 90%;"></div></span> 4.8</li>
+                            <li>Ubicación <span class="progress-bar"><div class="progress" style="width: 85%;"></div></span> 4.7</li>
+                            <li>Personal <span class="progress-bar"><div class="progress" style="width: 80%;"></div></span> 4.6</li>
+                            <li>Comodidad <span class="progress-bar"><div class="progress" style="width: 75%;"></div></span> 4.4</li>
+                            <li>Relación Calidad-Precio <span class="progress-bar"><div class="progress" style="width: 70%;"></div></span> 4.5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="review-card">
+                            <img src="https://placehold.co/50x50" alt="Maria González">
+                            <div class="review-details">
+                                <h4>Maria González <small>• Chile</small></h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>Habitación Individual<br>2024-01-15</p>
+                                <p>Excelente experiencia en Real Plaza. Las habitaciones son muy limpias y cómodas. El personal es súper amable y siempre dispuesto a ayudar. La ubicación es perfecta para explorar el centro histórico. Definitivamente regresaré.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <img src="https://placehold.co/50x50" alt="James Wilson">
+                            <div class="review-details">
+                                <h4>James Wilson <small>• Tacna</small></h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>Habitación Doble<br>2024-01-10</p>
+                                <p>Un hostal estupendo con una ubicación increíble. El personal habla inglés bien y nos ayudó con todas nuestras preguntas. El desayuno era sencillo pero bueno. El único inconveniente fue que el wifi era un poco lento en la habitación, pero en general, fue una estancia fantástica.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More reviews... -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <button class="btn btn-primary mt-3">Ver Todos los Comentarios</button>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section">
+        <div class="container">
+            <h2>Reserva tu Habitación</h2>
+            <p>Completa el formulario para confirmar tu reserva en Real Plaza</p>
+            <button class="btn btn-primary">Iniciar Reserva</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="logo">Real Plaza</h3>
+                    <p>Tu hogar lejos de casa en el corazón de la ciudad. Comodidad, ubicación y hospitalidad excepcional.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="quick-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Habitaciones</a></li>
+                        <li><a href="#">Tarifas</a></li>
+                        <li><a href="#">Ubicación</a></li>
+                        <li><a href="#">Comentarios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Atractivos Turísticos</h3>
+                    <ul class="quick-links">
+                        <li><a href="#">Baños Termales</a></li>
+                        <li><a href="#">Juegos Extremos</a></li>
+                        <li><a href="#">Plaza Principal</a></li>
+                        <li><a href="#">Camino Inca</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Francisco Antonio de Zela N°26</li>
+                        <li><i class="fas fa-phone"></i> +51 952269343</li>
+                        <li><i class="fas fa-envelope"></i> info@realplazahostal.com</li>
+                        <li><i class="fas fa-clock"></i> Abierto 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="legal">
+                <p>© 2025 Real Plaza Hostal. Todos los derechos reservados.</p>
+                <ul class="legal-links">
+                    <li><a href="#">Hildebrando J. Centeno Ch.</a></li>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
